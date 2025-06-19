@@ -4,10 +4,10 @@ A modular, cloud-ready backend powering a unified Generative AI platform for ent
 
 This repository contains Python-based microservices for production-grade GenAI applications, including:
 
-* Retrieval-augmented Knowledge Assistant
-* Automated Document Summarization
-* Multimodal GenAI Asset Creation
-* Analytics Insights Engine
+- Retrieval-augmented Knowledge Assistant
+- Automated Document Summarization
+- Multimodal GenAI Asset Creation
+- Analytics Insights Engine
 
 Ready for secure, scalable deployment to Azure, AWS, and GCP, with support for Docker, Kubernetes, and Terraform.
 
@@ -23,20 +23,21 @@ Ready for secure, scalable deployment to Azure, AWS, and GCP, with support for D
 
 ## Table of Contents
 
-* [Project Overview](#project-overview)
-* [Architecture Overview](#architecture-overview)
-* [Project Modules](#project-modules)
+- [Project Overview](#project-overview)
+- [Architecture Overview](#architecture-overview)
+- [Project Modules](#project-modules)
 
-  * [1. Enterprise Knowledge Assistant](#1-enterprise-genai-powered-knowledge-assistant)
-  * [2. Document Summarization Platform](#2-automated-document-generation--summarization-platform)
-  * [3. Multimodal GenAI Asset Creation](#3-multimodal-genai-for-digital-asset-creation)
-  * [4. Analytics Insights Engine](#4-genai-powered-analytics-insights-engine)
-* [Tech Stack](#tech-stack)
-* [Deployment & DevOps](#deployment--devops)
-* [Security & Compliance](#security--compliance)
-* [Getting Started](#getting-started)
-* [Contributing](#contributing)
-* [License](#license)
+  - [1. Enterprise Knowledge Assistant](#1-enterprise-genai-powered-knowledge-assistant)
+  - [2. Document Summarization Platform](#2-automated-document-generation--summarization-platform)
+  - [3. Multimodal GenAI Asset Creation](#3-multimodal-genai-for-digital-asset-creation)
+  - [4. Analytics Insights Engine](#4-genai-powered-analytics-insights-engine)
+
+- [Tech Stack](#tech-stack)
+- [Deployment & DevOps](#deployment--devops)
+- [Security & Compliance](#security--compliance)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -50,10 +51,10 @@ This backend is the foundation for a robust, enterprise-grade GenAI platform. Ea
 
 Each microservice operates independently and communicates via REST APIs. Common design patterns include:
 
-* Document & Data Ingestion → Vector DB / OCR / Tabular parsers
-* API Gateway (e.g., FastAPI) → Business Logic → LLM Orchestration (LangChain)
-* Optional: Frontend/UI layer for demos
-* Cloud-native deployment via Docker/K8s with IaC (Terraform)
+- Document & Data Ingestion → Vector DB / OCR / Tabular parsers
+- API Gateway (e.g., FastAPI) → Business Logic → LLM Orchestration (LangChain)
+- Optional: Frontend/UI layer for demos
+- Cloud-native deployment via Docker/K8s with IaC (Terraform)
 
 ---
 
@@ -66,17 +67,17 @@ Build a secure conversational assistant that retrieves, searches, and reasons ov
 
 **Key Frameworks/Libraries Used:**
 
-* Python, FastAPI
-* LangChain
-* OpenAI API, HuggingFace Transformers
-* FAISS/Pinecone (vector database)
-* PyPDF2, python-docx (document parsing)
+- Python, FastAPI
+- LangChain
+- OpenAI API, HuggingFace Transformers
+- FAISS/Pinecone (vector database)
+- PyPDF2, python-docx (document parsing)
 
 **Alignment with Job Description:**
 
-* Practical application of GenAI/NLP for enterprise knowledge management
-* Demonstrates experience with LangChain, LLMs, cloud deployment, and security
-* Directly relevant to client-facing, impact-driven AI solutions
+- Practical application of GenAI/NLP for enterprise knowledge management
+- Demonstrates experience with LangChain, LLMs, cloud deployment, and security
+- Directly relevant to client-facing, impact-driven AI solutions
 
 ---
 
@@ -87,17 +88,17 @@ Automatically extract, summarize, and generate business reports from diverse fil
 
 **Key Frameworks/Libraries Used:**
 
-* FastAPI/Flask
-* HuggingFace Transformers (T5, BART)
-* PyPDF2, python-docx, pytesseract (OCR and parsing)
-* LangChain
-* AWS/GCP Textract (cloud OCR, optional)
+- FastAPI/Flask
+- HuggingFace Transformers (T5, BART)
+- PyPDF2, python-docx, pytesseract (OCR and parsing)
+- LangChain
+- AWS/GCP Textract (cloud OCR, optional)
 
 **Alignment with Job Description:**
 
-* End-to-end NLP/document automation pipeline
-* Experience with ML/AI reporting, Python APIs, and security
-* Aligns with consulting scenarios requiring document processing and compliance
+- End-to-end NLP/document automation pipeline
+- Experience with ML/AI reporting, Python APIs, and security
+- Aligns with consulting scenarios requiring document processing and compliance
 
 ---
 
@@ -108,16 +109,16 @@ Provide APIs to generate marketing or communication assets (text, images, audio)
 
 **Key Frameworks/Libraries Used:**
 
-* FastAPI/Flask
-* OpenAI (text), Stable Diffusion (image), Google TTS/AudioLM (audio)
-* HuggingFace Transformers
-* LangChain/LangGraph
+- FastAPI/Flask
+- OpenAI (text), Stable Diffusion (image), Google TTS/AudioLM (audio)
+- HuggingFace Transformers
+- LangChain/LangGraph
 
 **Alignment with Job Description:**
 
-* Integration of advanced GenAI domains (text, image, audio)
-* Demonstrates orchestration and workflow automation
-* Relevant to modern enterprise content and R\&D workflows
+- Integration of advanced GenAI domains (text, image, audio)
+- Demonstrates orchestration and workflow automation
+- Relevant to modern enterprise content and R\&D workflows
 
 ---
 
@@ -128,48 +129,48 @@ Convert tabular business data into dashboards, visualizations, and automated nat
 
 **Key Frameworks/Libraries Used:**
 
-* FastAPI
-* Pandas, scikit-learn (data analysis)
-* HuggingFace Transformers/OpenAI API (insight generation)
-* Plotly, Matplotlib (data visualization)
-* LangChain
+- FastAPI
+- Pandas, scikit-learn (data analysis)
+- HuggingFace Transformers/OpenAI API (insight generation)
+- Plotly, Matplotlib (data visualization)
+- LangChain
 
 **Alignment with Job Description:**
 
-* Applies GenAI/LLMs to business analytics and reporting
-* Full data pipeline experience with Python and ML frameworks
-* Matches Deloitte’s vision for insight-driven client value
+- Applies GenAI/LLMs to business analytics and reporting
+- Full data pipeline experience with Python and ML frameworks
+- Matches Deloitte’s vision for insight-driven client value
 
 ---
 
 ## Tech Stack
 
-* Python 3.9+
-* FastAPI (main web framework)
-* LangChain
-* OpenAI, HuggingFace Transformers
-* FAISS/Pinecone (vector storage)
-* Pandas, scikit-learn, Plotly
-* Docker, Kubernetes
-* Azure, AWS, GCP (cloud deployment)
-* Terraform (infrastructure as code)
+- Python 3.9+
+- FastAPI (main web framework)
+- LangChain
+- OpenAI, HuggingFace Transformers
+- FAISS/Pinecone (vector storage)
+- Pandas, scikit-learn, Plotly
+- Docker, Kubernetes
+- Azure, AWS, GCP (cloud deployment)
+- Terraform (infrastructure as code)
 
 ---
 
 ## Deployment & DevOps
 
-* Each module has its own Dockerfile and can be containerized separately
-* Ready for Kubernetes (AKS, EKS, GKE), with production-ready configuration
-* Terraform modules for infrastructure provisioning
-* CI/CD pipelines (GitHub Actions, etc.) provided in `/ci-cd`
+- Each module has its own Dockerfile and can be containerized separately
+- Ready for Kubernetes (AKS, EKS, GKE), with production-ready configuration
+- Terraform modules for infrastructure provisioning
+- CI/CD pipelines (GitHub Actions, etc.) provided in `/ci-cd`
 
 ---
 
 ## Security & Compliance
 
-* API Key and secret management via environment variables and vault integration
-* Token-level access control and request logging
-* GDPR and SOC2-oriented logging & data governance practices (optional extensions)
+- API Key and secret management via environment variables and vault integration
+- Token-level access control and request logging
+- GDPR and SOC2-oriented logging & data governance practices (optional extensions)
 
 ---
 
