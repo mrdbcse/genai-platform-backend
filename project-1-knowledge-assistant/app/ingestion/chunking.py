@@ -1,13 +1,10 @@
-from app.config import settings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from app.config import settings
 
 
-def chunk_text(
-    text: str,
-    chunk_size: int = settings.CHUNK_SIZE,
-    chunk_overlap: int = settings.CHUNK_OVERLAP,
-) -> list:
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size, chunk_overlap=chunk_overlap
+def chunk_text(text: str) -> list[str]:
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=settings.CHUNK_SIZE, chunk_overlap=settings.CHUNK_OVERLAP
     )
-    return text_splitter.split_text(text=text)
+    chunk = splitter.split_text(text=text)
+    return chunk

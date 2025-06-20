@@ -2,11 +2,15 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    OPENAI_API_KEY: str
+    # MongoDB
     MONGO_URI: str
-    MODEL_NAME: str
+    MONGO_DB: str
+    # Waviate
     WEAVIATE_URL: str
-    MONGO_DB_NAME: str
+    # LLM
+    MODEL_NAME: str
+    OPENAI_API_KEY: str
+    # Chunking
     CHUNK_SIZE: int
     CHUNK_OVERLAP: int
 

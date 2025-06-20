@@ -11,3 +11,4 @@ motor
 weaviate-client
 pypdf
 python-multipart
+python-docx
