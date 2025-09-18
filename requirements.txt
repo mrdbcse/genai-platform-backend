@@ -7,8 +7,11 @@ openai
 langchain-community
 langchain-text-splitters
 faiss-cpu
-motor
 weaviate-client
 pypdf
 python-multipart
 python-docx
+pymongo
+langchain-core
+langchain-pinecone
+-e .
