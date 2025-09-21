@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI
 from src.app.schema.med_bot import Chat
 
 router = APIRouter(prefix="/api/medical_assistant", tags=["Medical Chatbot"])
-index_name = "medical_assistant"
+index_name = "medical-assistant"
 file_path = "data\medical\Current Essentials of Medicine.pdf"
 
 document = load_pdf(file_path=file_path)
